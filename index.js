@@ -10,7 +10,7 @@ const cookieParser = require('cookie-parser');
 app.use(cookieParser());
 //using cors
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://my-note-frontend-three.vercel.app/',
   credentials: true
 }));
 // Middleware to parse JSON
