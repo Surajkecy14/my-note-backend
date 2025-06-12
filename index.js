@@ -16,7 +16,7 @@ app.use(cors({
 // Middleware to parse JSON
 app.use(express.json());
 //Connect mongo
-mongoose.connect('mongodb://localhost:27017/My-Note');
+mongoose.connect(process.env.MONGO_URI)
 // Use auth routes — now accessible as /auth/login, /auth/logout, etc.
 app.use('/auth', authRoutes);
 // Use mote routes — now accessible as /note/edit, /auth/add, etc.
